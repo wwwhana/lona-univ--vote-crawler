@@ -73,10 +73,11 @@ async function works() {
 		await sheet.setHeaderRow([
 			"이름", // A
 			"득표 수", // B
-			"랭킹", // C
+			"조", // C
 			"직전 랭킹", // D
-			"변동(1시간 전과 비교)", //E
+			"랭킹", // E
 			"수집시간", // F
+			"변동(1시간 전과 비교)", // G
 		]);
 
 		await sheet.loadCells(`A2:F${results.length + 2}`);
@@ -85,7 +86,7 @@ async function works() {
 			const nameCell = sheet.getCellByA1(`A${i + 2}`);
 			nameCell.value = results[i].name;
 
-			const rankCell = sheet.getCellByA1(`C${i + 2}`);
+			const rankCell = sheet.getCellByA1(`E${i + 2}`);
 
 			const oldRankCell = sheet.getCellByA1(`D${i + 2}`);
 			oldRankCell.value = rankCell.value;
@@ -112,4 +113,4 @@ async function works() {
 }
 
 cron.schedule("00 00 * * * *", works);
-works();
+// works();
