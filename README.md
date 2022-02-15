@@ -29,7 +29,7 @@ yarn run start
 네이버 로그인 및 모든 회차에 대한 투표가 필요합니다.
 네이버 로그인은 "USRE_DATA_DIR"설정에 저장된 프로필으로 브라우저를 열고 `로그인 상태 유지`를 체크 후 로그인 하면 로그인이 유지됩니다.
 
-## Links
+## 추천 후보 Links
 
 - 투표 링크([소스](https://cafe.naver.com/ronaronakr/2476))
 - 큐에 ([트위치](https://www.twitch.tv/yu_0w0r)) ([유튜브](https://www.youtube.com/c/9yueeeee))
