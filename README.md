@@ -1,4 +1,4 @@
-# lona-univ--vote-crawler
+# lona-univ-vote-crawler
 
 로나 유니버스 투표현황 크롤링 봇입니다.
 매 시간 정각마다 크롤링하여 구글 스프레드 시트에 저장합니다.
